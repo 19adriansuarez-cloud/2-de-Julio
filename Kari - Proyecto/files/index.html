@@ -1,0 +1,145 @@
+<html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chimuelo · Furia Nocturna</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="cielo"></canvas>
+
+<header>
+  <div class="eyebrow">Archipiélago Bárbaro · Berk</div>
+  <h1>Chimuelo</h1>
+  <p class="subt">La última Furia Nocturna conocida. Ningún jinete eligió mejor dragón sin querer.</p>
+
+  <div id="escenario" role="button" tabindex="0" aria-label="Toca a Chimuelo para interactuar"
+       title="Tócalo, hazlo parpadear o dispara plasma">
+    <svg viewBox="0 0 500 420">
+      <ellipse cx="250" cy="380" rx="150" ry="18" fill="#000" opacity=".35"/>
+
+      <!-- ala izquierda -->
+      <path class="ala ala-izq" d="M175 230 C 80 200, 40 250, 30 320 C 90 300, 140 290, 175 250 Z"
+            fill="#16323a" stroke="#0b1f24" stroke-width="3"/>
+      <!-- ala derecha -->
+      <path class="ala ala-der" d="M325 230 C 420 200, 460 250, 470 320 C 410 300, 360 290, 325 250 Z"
+            fill="#16323a" stroke="#0b1f24" stroke-width="3"/>
+
+      <!-- cola -->
+      <path d="M250 360 C 230 400, 260 415, 290 408 C 270 400, 268 380, 260 360 Z" fill="#123036"/>
+
+      <!-- cuerpo -->
+      <g class="cuerpo">
+        <ellipse cx="250" cy="280" rx="92" ry="100" fill="#173a40"/>
+        <ellipse cx="250" cy="290" rx="55" ry="68" fill="#1f4a4f"/>
+
+        <!-- cabeza -->
+        <ellipse cx="250" cy="190" rx="78" ry="64" fill="#16383e"/>
+        <path d="M180 175 C 165 150, 190 130, 215 140 Z" fill="#102a2e"/>
+        <path d="M320 175 C 335 150, 310 130, 285 140 Z" fill="#102a2e"/>
+
+        <!-- ojos -->
+        <ellipse class="ojo" cx="218" cy="185" rx="17" ry="20" fill="#5C7457" stroke="#5C7457" stroke-width="2"/>
+        <circle cx="218" cy="187" r="7" fill="#1A1A1D"/>
+        <ellipse class="ojo" cx="282" cy="185" rx="17" ry="20" fill="#5C7457" stroke="#5C7457" stroke-width="2"/>
+        <circle cx="282" cy="187" r="7" fill="#1A1A1D"/>
+
+        <!-- hocico -->
+        <ellipse cx="250" cy="225" rx="42" ry="24" fill="#102a2e"/>
+      </g>
+
+      <!-- plasma -->
+      <g class="plasma">
+        <ellipse cx="250" cy="245" rx="20" ry="28" fill="#A020F0"/>
+        <ellipse cx="250" cy="245" rx="10" ry="16" fill="#8a0bd2"/>
+      </g>
+    </svg>
+  </div>
+  <p class="toque">toca una vez para parpadear · dos veces para abrir alas · mantén presionado para disparo de plasma</p>
+  <div class="pista">desliza hacia abajo ↓</div>
+</header>
+
+<section id="datos">
+  <p class="titulo-seccion">Ficha de dragón</p>
+  <div class="raya"></div>
+  <div id="bestiario">
+    <div class="dato"><h3>Especie</h3><p>Furia Nocturna — la más rara y temida de los dragones conocidos.</p></div>
+    <div class="dato"><h3>Jinete</h3><p>Hipo Horrendous Haddock III, futuro jefe de Berk.</p></div>
+    <div class="dato"><h3>Particularidad</h3><p>Perdió parte de su aleta izquierda; vuela gracias a una prótesis diseñada por su jinete.</p></div>
+    <div class="dato"><h3>Ataque</h3><p>Dispara bolas de plasma azul, casi invisibles en la oscuridad.</p></div>
+    <div class="dato"><h3>Temperamento</h3><p>Curioso, juguetón y profundamente leal — pero territorial con su jinete.</p></div>
+    <div class="dato"><h3>Sonido distintivo</h3><p>Un gorjeo agudo cuando está contento; un gruñido grave de advertencia.</p></div>
+    <div class="dato"><h3>Tiene una gran admiradora y seguidora</h3><p>Entre las hermosas montañas de norte america se encuentra un país llamado "El Salvador", donde en esos lindos paísajes y atardeceres al sol; vive su gran admiradora. Karina Julissa Santa Maria Jurado</p></div>
+    <div class="dato"><h3>Algo Sospechoso</h3><p>Hay rumores de que una fragancia especial ronda por los alrededores cerca de su nido...</p></div>
+  </div>
+</section>
+
+<section id="cuaderno-seccion">
+  <p class="titulo-seccion">El cuaderno de Hipo</p>
+  <div class="raya"></div>
+  <div id="cuaderno">
+    <div id="frase-curiosa">Pulsa el botón para descubrir una nota del cuaderno de dragones.</div>
+    <button id="btn-frase">Pasar página</button>
+  </div>
+</section>
+
+<footer>
+  Perdoname por la calidad pero no encontré una mejor imagen...
+</footer> 
+
+
+<section id="peliculas-seccion">
+  <p class="titulo-seccion">Saga en pantalla</p>
+  <div class="raya"></div>
+  <div id="peliculas">
+    <div class="peli">
+      <div class="peli-imagen"><img src="https://i.postimg.cc/ctdHCDT8/how-to-train-your-dragon.jpg" alt="Póster de Cómo Entrenar a tu Dragón"></div>
+      <div class="peli-info"><span>2010</span><h4>Cómo Entrenar a tu Dragón</h4></div>
+    </div>
+    <div class="peli">
+      <div class="peli-imagen"><img src="https://i.postimg.cc/LqJzDst4/91-y-A2IFId-L.jpg" alt="Póster de Cómo Entrenar a tu Dragón 2"></div>
+      <div class="peli-info"><span>2014</span><h4>Cómo Entrenar a tu Dragón 2</h4></div>
+    </div>
+    <div class="peli">
+      <div class="peli-imagen"><img src="https://i.postimg.cc/1g8pBzGy/poster-1-como-entrenar-a-tu-dragon-3-original.jpg" alt="Póster de Cómo Entrenar a tu Dragón 3"></div>
+      <div class="peli-info"><span>2019</span><h4>Cómo Entrenar a tu Dragón 3: El Mundo Oculto</h4></div>
+    </div>
+    <div class="peli">
+      <div class="peli-imagen"><img src="https://i.postimg.cc/QBFpmMQX/276463.jpg" alt="Póster de Cómo Entrenar a tu Dragón (live action)"></div>
+      <div class="peli-info"><span>2025</span><h4>Cómo Entrenar a tu Dragón (live action)</h4></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Página creada con todo el Cariño del mundo para tú hermoso cumpleaños, <strong>Karina</strong> 
+  <br>Entre la página se encuentra un pequeño secreto...
+</footer>
+
+<svg id="nido-secreto" viewBox="0 0 64 64" title="¿qué es esto?">
+  <ellipse cx="32" cy="48" rx="26" ry="10" fill="#3a2a18"/>
+  <ellipse cx="32" cy="40" rx="20" ry="9" fill="#523a22"/>
+  <ellipse cx="22" cy="30" rx="7" ry="9" fill="#cdebe6"/>
+  <ellipse cx="34" cy="26" rx="7" ry="9" fill="#cdebe6"/>
+  <ellipse cx="44" cy="32" rx="7" ry="9" fill="#cdebe6"/>
+</svg>
+
+<div id="frasco-modal">
+  <div class="tarjeta-frasco">
+    <svg class="frasco-svg" viewBox="0 0 60 100">
+      <rect x="22" y="4" width="16" height="10" rx="2" fill="#ff9ad5"/>
+      <rect x="25" y="0" width="10" height="6" rx="2" fill="#ffc2e6"/>
+      <path d="M14 18 Q14 12 22 12 H38 Q46 12 46 18 V86 Q46 96 30 96 Q14 96 14 86 Z" fill="#ffd9ef" stroke="#ff9ad5" stroke-width="2"/>
+      <rect x="14" y="40" width="32" height="30" fill="#ffc2e6" opacity=".6"/>
+    </svg>
+    <h3>¡Los haz encontrado!</h3>
+    <p>Entre las escamas de Chimuelo se escondía algo que no es de Berk: un frasco rosa de <strong>Ariana Grande — Cloud Pink</strong>. Ni Hipo sabe cómo llegó hasta aquí.</p>
+    <button class="cerrar-frasco" id="cerrar-frasco">Volver a esconderlo</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
